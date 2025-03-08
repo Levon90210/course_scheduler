@@ -1,0 +1,11 @@
+{
+    "courses": [
+        {"id": 1, "name": "Algebra", "instructor": "Dr. Smith", "hours": 3},
+        {"id": 2, "name": "Programming", "instructor": "Dr. Johnson", "hours": 2}
+    ],
+    "instructors": [
+        {"name": "Dr. Smith", "availability": ["Monday 9AM-12PM", "Wednesday 10AM-1PM"]},
+        {"name": "Dr. Johnson", "availability": ["Tuesday 9AM-11AM", "Thursday 1PM-3PM"]}
+    ],
+    "time_slots": ["Monday 9AM-12PM", "Tuesday 9AM-11AM", "Wednesday 10AM-1PM", "Thursday 1PM-3PM"]
+}
