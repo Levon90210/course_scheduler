@@ -1,11 +1,374 @@
 {
-    "courses": [
-        {"id": 1, "name": "Algebra", "instructor": "Dr. Smith", "hours": 3},
-        {"id": 2, "name": "Programming", "instructor": "Dr. Johnson", "hours": 2}
-    ],
-    "instructors": [
-        {"name": "Dr. Smith", "availability": ["Monday 9AM-12PM", "Wednesday 10AM-1PM"]},
-        {"name": "Dr. Johnson", "availability": ["Tuesday 9AM-11AM", "Thursday 1PM-3PM"]}
-    ],
-    "time_slots": ["Monday 9AM-12PM", "Tuesday 9AM-11AM", "Wednesday 10AM-1PM", "Thursday 1PM-3PM"]
+  "courses": [
+    {
+      "name": "C++ Lecture",
+      "times_per_week": 1,
+      "preferred_time_slots": [
+        "Monday 9:00-10:30",
+        "Monday 10:45-12:15",
+        "Monday 13:00-14:30",
+        "Tuesday 9:00-10:30",
+        "Tuesday 10:45-12:15",
+        "Tuesday 13:00-14:30",
+        "Wednesday 9:00-10:30",
+        "Wednesday 10:45-12:15",
+        "Wednesday 13:00-14:30",
+        "Thursday 9:00-10:30",
+        "Thursday 10:45-12:15",
+        "Thursday 13:00-14:30",
+        "Friday 9:00-10:30",
+        "Friday 10:45-12:15",
+        "Friday 13:00-14:30",
+        "Saturday 9:00-10:30"
+      ]
+    },
+    {
+      "name": "C++",
+      "times_per_week": 1,
+      "preferred_time_slots": [
+        "Monday 9:00-10:30",
+        "Monday 10:45-12:15",
+        "Monday 13:00-14:30",
+        "Monday 14:45-16:15",
+        "Tuesday 9:00-10:30",
+        "Tuesday 10:45-12:15",
+        "Tuesday 13:00-14:30",
+        "Tuesday 14:45-16:15",
+        "Wednesday 9:00-10:30",
+        "Wednesday 10:45-12:15",
+        "Wednesday 13:00-14:30",
+        "Wednesday 14:45-16:15",
+        "Thursday 9:00-10:30",
+        "Thursday 10:45-12:15",
+        "Thursday 13:00-14:30",
+        "Thursday 14:45-16:15",
+        "Friday 9:00-10:30",
+        "Friday 10:45-12:15",
+        "Friday 13:00-14:30",
+        "Friday 14:45-16:15"
+      ]
+    },
+    {
+      "name": "OS Lecture",
+      "times_per_week": 1,
+      "preferred_time_slots": [
+        "Monday 9:00-10:30",
+        "Monday 10:45-12:15",
+        "Monday 13:00-14:30",
+        "Tuesday 9:00-10:30",
+        "Tuesday 10:45-12:15",
+        "Tuesday 13:00-14:30",
+        "Wednesday 9:00-10:30",
+        "Wednesday 10:45-12:15",
+        "Wednesday 13:00-14:30",
+        "Thursday 9:00-10:30",
+        "Thursday 10:45-12:15",
+        "Thursday 13:00-14:30",
+        "Friday 9:00-10:30",
+        "Friday 10:45-12:15",
+        "Friday 13:00-14:30",
+        "Saturday 9:00-10:30"
+      ]
+    },
+    {
+      "name": "OS",
+      "times_per_week": 1,
+      "preferred_time_slots": [
+        "Monday 9:00-10:30",
+        "Monday 10:45-12:15",
+        "Monday 13:00-14:30",
+        "Monday 14:45-16:15",
+        "Tuesday 9:00-10:30",
+        "Tuesday 10:45-12:15",
+        "Tuesday 13:00-14:30",
+        "Tuesday 14:45-16:15",
+        "Wednesday 9:00-10:30",
+        "Wednesday 10:45-12:15",
+        "Wednesday 13:00-14:30",
+        "Wednesday 14:45-16:15",
+        "Thursday 9:00-10:30",
+        "Thursday 10:45-12:15",
+        "Thursday 13:00-14:30",
+        "Thursday 14:45-16:15",
+        "Friday 9:00-10:30",
+        "Friday 10:45-12:15",
+        "Friday 13:00-14:30",
+        "Friday 14:45-16:15"
+      ]
+    },
+    {
+      "name": "Complex Analysis Lecture",
+      "times_per_week": 2,
+      "preferred_time_slots": [
+        "Monday 9:00-10:30",
+        "Monday 10:45-12:15",
+        "Monday 13:00-14:30",
+        "Tuesday 9:00-10:30",
+        "Tuesday 10:45-12:15",
+        "Tuesday 13:00-14:30",
+        "Wednesday 9:00-10:30",
+        "Wednesday 10:45-12:15",
+        "Wednesday 13:00-14:30",
+        "Thursday 9:00-10:30",
+        "Thursday 10:45-12:15",
+        "Thursday 13:00-14:30",
+        "Friday 9:00-10:30",
+        "Friday 10:45-12:15",
+        "Friday 13:00-14:30",
+        "Saturday 9:00-10:30"
+      ]
+    },
+    {
+      "name": "Complex Analysis",
+      "times_per_week": 2,
+      "preferred_time_slots": [
+        "Monday 9:00-10:30",
+        "Monday 10:45-12:15",
+        "Monday 13:00-14:30",
+        "Monday 14:45-16:15",
+        "Tuesday 9:00-10:30",
+        "Tuesday 10:45-12:15",
+        "Tuesday 13:00-14:30",
+        "Tuesday 14:45-16:15",
+        "Wednesday 9:00-10:30",
+        "Wednesday 10:45-12:15",
+        "Wednesday 13:00-14:30",
+        "Wednesday 14:45-16:15",
+        "Thursday 9:00-10:30",
+        "Thursday 10:45-12:15",
+        "Thursday 13:00-14:30",
+        "Thursday 14:45-16:15",
+        "Friday 9:00-10:30",
+        "Friday 10:45-12:15",
+        "Friday 13:00-14:30",
+        "Friday 14:45-16:15",
+        "Saturday 9:00-10:30",
+        "Saturday 10:45-12:15",
+        "Saturday 13:00-14:30",
+        "Saturday 14:45-16:15"
+      ]
+    },
+    {
+      "name": "Math Logic",
+      "times_per_week": 1,
+      "preferred_time_slots": [
+        "Monday 9:00-10:30",
+        "Tuesday 9:00-10:30",
+        "Wednesday 9:00-10:30",
+        "Thursday 9:00-10:30",
+        "Friday 9:00-10:30",
+        "Saturday 9:00-10:30"
+      ]
+    },
+    {
+      "name": "Physics",
+      "times_per_week": 1,
+      "preferred_time_slots": [
+        "Monday 13:00-14:30",
+        "Monday 14:45-16:15",
+        "Tuesday 13:00-14:30",
+        "Tuesday 14:45-16:15",
+        "Wednesday 13:00-14:30",
+        "Wednesday 14:45-16:15",
+        "Thursday 13:00-14:30",
+        "Thursday 14:45-16:15",
+        "Friday 13:00-14:30",
+        "Friday 14:45-16:15",
+        "Saturday 10:45-12:15",
+        "Saturday 13:00-14:30",
+        "Saturday 14:45-16:15"
+      ]
+    },
+    {
+      "name": "Physics Lecture",
+      "times_per_week": 1,
+      "preferred_time_slots": [
+        "Monday 9:00-10:30",
+        "Monday 10:45-12:15",
+        "Monday 13:00-14:30",
+        "Tuesday 9:00-10:30",
+        "Tuesday 10:45-12:15",
+        "Tuesday 13:00-14:30",
+        "Wednesday 9:00-10:30",
+        "Wednesday 10:45-12:15",
+        "Wednesday 13:00-14:30",
+        "Thursday 9:00-10:30",
+        "Thursday 10:45-12:15",
+        "Thursday 13:00-14:30",
+        "Friday 9:00-10:30",
+        "Friday 10:45-12:15",
+        "Friday 13:00-14:30"
+      ]
+    },
+    {
+      "name": "Computer Networks",
+      "times_per_week": 1,
+      "preferred_time_slots": [
+        "Monday 13:00-14:30",
+        "Monday 14:45-16:15",
+        "Tuesday 13:00-14:30",
+        "Tuesday 14:45-16:15",
+        "Wednesday 13:00-14:30",
+        "Wednesday 14:45-16:15",
+        "Thursday 13:00-14:30",
+        "Thursday 14:45-16:15",
+        "Friday 13:00-14:30",
+        "Friday 14:45-16:15",
+        "Saturday 10:45-12:15",
+        "Saturday 13:00-14:30"
+      ]
+    },
+    {
+      "name": "PE",
+      "times_per_week": 1,
+      "preferred_time_slots": [
+        "Thursday 13:00-14:30"
+      ]
+    }
+  ],
+  "instructors": [
+    {
+      "name": "L. Apinyan",
+      "availability": [
+        "Monday 10:45-12:15",
+        "Monday 13:00-14:30",
+        "Tuesday 9:00-10:30",
+        "Tuesday 10:45-12:15",
+        "Tuesday 13:00-14:30",
+        "Saturday 9:00-10:30",
+        "Saturday 10:45-12:15"
+      ],
+      "preferred_courses": ["Math Logic"],
+      "max_hours": 7
+    },
+    {
+      "name": "T. Hayrapetyan",
+      "availability": [
+        "Tuesday 10:45-12:15",
+        "Tuesday 13:00-14:30",
+        "Tuesday 14:45-16:15",
+        "Friday 10:45-12:15",
+        "Friday 13:00-14:30"
+      ],
+      "preferred_courses": ["C++ Lecture"],
+      "max_hours": 5
+    },
+    {
+      "name": "A. Mkrtchyan",
+      "availability": [
+        "Monday 10:45-12:15",
+        "Monday 13:00-14:30",
+        "Monday 14:45-16:15",
+        "Tuesday 10:45-12:15",
+        "Tuesday 13:00-14:30",
+        "Wednesday 10:45-12:15",
+        "Wednesday 13:00-14:30"
+      ],
+      "preferred_courses": ["C++"],
+      "max_hours": 5
+    },
+    {
+      "name": "G. Meliqyan",
+      "availability": [
+        "Tuesday 10:45-12:15",
+        "Tuesday 13:00-14:30",
+        "Thursday 10:45-14:30",
+        "Thursday 14:45-16:15"
+      ],
+      "preferred_courses": ["Physics", "Physics Lecture"],
+      "max_hours": 7
+    },
+    {
+      "name": "M. Khachaturyan",
+      "availability": [
+        "Tuesday 13:00-14:30",
+        "Wednesday 9:00-10:30",
+        "Wednesday 10:45-12:15",
+        "Saturday 9:00-10:30",
+        "Saturday 10:45-12:15"
+      ],
+      "preferred_courses": ["Complex Analysis"],
+      "max_hours": 5
+    },
+    {
+      "name": "S. Berberyan",
+      "availability": [
+        "Wednesday 10:45-12:15",
+        "Wednesday 13:00-14:30",
+        "Friday 10:45-12:15",
+        "Friday 13:00-14:30"
+      ],
+      "preferred_courses": ["Complex Analysis Lecture"],
+      "max_hours": 7
+    },
+    {
+      "name": "G. Saghyan",
+      "availability": [
+        "Wednesday 10:45-12:15",
+        "Wednesday 13:00-14:30",
+        "Wednesday 14:45-16:15"
+      ],
+      "preferred_courses": ["Computer Networks"],
+      "max_hours": 5
+    },
+    {
+      "name": "S. Amirkhanyan",
+      "availability": [
+        "Monday 9:00-10:30",
+        "Monday 10:45-12:15",
+        "Thursday 9:00-10:30",
+        "Thursday 10:45-12:15"
+      ],
+      "preferred_courses": ["OS"],
+      "max_hours": 5
+    },
+    {
+      "name": "M. Smbatyan",
+      "availability": [
+        "Monday 9:00-10:30",
+        "Thursday 9:00-10:30",
+        "Friday 9:00-10:30",
+        "Saturday 9:00-10:30"
+      ],
+      "preferred_courses": ["OS Lecture", "OS"],
+      "max_hours": 7
+    },
+    {
+      "name": "PE Instructor",
+      "availability": [
+        "Thursday 9:00-10:30",
+        "Thursday 10:45-12:15",
+        "Thursday 13:00-14:30",
+        "Thursday 14:45-16:15"
+      ],
+      "preferred_courses": ["PE"],
+      "max_hours": 7
+    }
+  ],
+  "time_slots": [
+    "Monday 9:00-10:30",
+    "Monday 10:45-12:15",
+    "Monday 13:00-14:30",
+    "Monday 14:45-16:15",
+    "Tuesday 9:00-10:30",
+    "Tuesday 10:45-12:15",
+    "Tuesday 13:00-14:30",
+    "Tuesday 14:45-16:15",
+    "Wednesday 9:00-10:30",
+    "Wednesday 10:45-12:15",
+    "Wednesday 13:00-14:30",
+    "Wednesday 14:45-16:15",
+    "Thursday 9:00-10:30",
+    "Thursday 10:45-12:15",
+    "Thursday 13:00-14:30",
+    "Thursday 14:45-16:15",
+    "Friday 9:00-10:30",
+    "Friday 10:45-12:15",
+    "Friday 13:00-14:30",
+    "Friday 14:45-16:15",
+    "Saturday 9:00-10:30",
+    "Saturday 10:45-12:15",
+    "Saturday 13:00-14:30",
+    "Saturday 14:45-16:15"
+  ]
 }

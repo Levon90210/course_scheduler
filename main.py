@@ -1,4 +1,7 @@
-from src.utils import load_data
+from src.utils import *
 
-data = load_data('data/sample_input.json')
-print('Courses:', data['courses'])
+if __name__ == '__main__':
+    data = load_data('data/sample_input.json')
+    scheduler = load_scheduler(data)
+
+    scheduler.solve()
