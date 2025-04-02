@@ -1,9 +1,5 @@
 from src.scheduler import *
 
-def load_data(file_path):
-    with open(file_path, 'r') as f:
-        return json.load(f)
-
 def load_instructors(data):
     return [Instructor(instructor['name'],
                        instructor['availability'],
@@ -17,9 +13,12 @@ def load_courses(data):
                    course['preferred_time_slots'],)
             for course in data['courses']]
 
-def load_scheduler(data):
-    instructors = load_instructors(data)
-    courses = load_courses(data)
-    time_slots = data['time_slots']
+def load_scheduler(file_path):
+    with open(file_path, 'r') as f:
+        data = json.load(f)
 
-    return Scheduler(courses, instructors, time_slots)
+        instructors = load_instructors(data)
+        courses = load_courses(data)
+        time_slots = data['time_slots']
+
+        return Scheduler(courses, instructors, time_slots)

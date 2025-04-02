@@ -1,0 +1,69 @@
+{
+  "schedule": [
+    {
+      "course": "C++ Lecture",
+      "time_slot": "Friday 10:45-12:15",
+      "instructor": "T. Hayrapetyan"
+    },
+    {
+      "course": "C++",
+      "time_slot": "Monday 10:45-12:15",
+      "instructor": "A. Mkrtchyan"
+    },
+    {
+      "course": "OS Lecture",
+      "time_slot": "Friday 09:00-10:30",
+      "instructor": "M. Smbatyan"
+    },
+    {
+      "course": "OS",
+      "time_slot": "Monday 09:00-10:30",
+      "instructor": "S. Amirkhanyan"
+    },
+    {
+      "course": "Complex Analysis Lecture",
+      "time_slot": "Wednesday 10:45-12:15",
+      "instructor": "S. Berberyan"
+    },
+    {
+      "course": "Complex Analysis Lecture",
+      "time_slot": "Friday 13:00-14:30",
+      "instructor": "S. Berberyan"
+    },
+    {
+      "course": "Complex Analysis",
+      "time_slot": "Wednesday 09:00-10:30",
+      "instructor": "M. Khachaturyan"
+    },
+    {
+      "course": "Complex Analysis",
+      "time_slot": "Saturday 09:00-10:30",
+      "instructor": "M. Khachaturyan"
+    },
+    {
+      "course": "Math Logic",
+      "time_slot": "Tuesday 09:00-10:30",
+      "instructor": "L. Apinyan"
+    },
+    {
+      "course": "Physics",
+      "time_slot": "Tuesday 13:00-14:30",
+      "instructor": "G. Meliqyan"
+    },
+    {
+      "course": "Physics Lecture",
+      "time_slot": "Tuesday 10:45-12:15",
+      "instructor": "G. Meliqyan"
+    },
+    {
+      "course": "Computer Networks",
+      "time_slot": "Wednesday 13:00-14:30",
+      "instructor": "G. Saghyan"
+    },
+    {
+      "course": "PE",
+      "time_slot": "Thursday 09:00-10:30",
+      "instructor": "PE Instructor"
+    }
+  ]
+}
