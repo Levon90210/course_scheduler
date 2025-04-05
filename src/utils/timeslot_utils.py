@@ -5,7 +5,7 @@ def get_time_penalty(time_slot: str) -> float:
 
     return time_value - 9.0
 
-def get_time_slot_length(time_slot) -> float:
+def get_time_slot_length(time_slot: str) -> float:
     time_interval = time_slot.split()[1]
     start_time = time_interval.split("-")[0]
     end_time = time_interval.split("-")[1]

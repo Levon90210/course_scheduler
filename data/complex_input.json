@@ -228,7 +228,7 @@
   ],
   "instructors": [
     {
-      "name": "L. Apinyan",
+      "name": "Dr. Smith",
       "availability": [
         "Monday 10:45-12:15",
         "Monday 13:00-14:30",
@@ -242,7 +242,7 @@
       "max_hours": 7
     },
     {
-      "name": "T. Hayrapetyan",
+      "name": "Dr. Johnson",
       "availability": [
         "Tuesday 10:45-12:15",
         "Tuesday 13:00-14:30",
@@ -254,7 +254,7 @@
       "max_hours": 5
     },
     {
-      "name": "A. Mkrtchyan",
+      "name": "Dr. Williams",
       "availability": [
         "Monday 10:45-12:15",
         "Monday 13:00-14:30",
@@ -268,7 +268,7 @@
       "max_hours": 5
     },
     {
-      "name": "G. Meliqyan",
+      "name": "Dr. Brown",
       "availability": [
         "Tuesday 10:45-12:15",
         "Tuesday 13:00-14:30",
@@ -279,7 +279,7 @@
       "max_hours": 7
     },
     {
-      "name": "M. Khachaturyan",
+      "name": "Dr. Jones",
       "availability": [
         "Tuesday 13:00-14:30",
         "Wednesday 09:00-10:30",
@@ -291,7 +291,7 @@
       "max_hours": 5
     },
     {
-      "name": "S. Berberyan",
+      "name": "Dr. Garcia",
       "availability": [
         "Wednesday 10:45-12:15",
         "Wednesday 13:00-14:30",
@@ -302,7 +302,7 @@
       "max_hours": 7
     },
     {
-      "name": "G. Saghyan",
+      "name": "Dr. Miller",
       "availability": [
         "Wednesday 10:45-12:15",
         "Wednesday 13:00-14:30",
@@ -312,7 +312,7 @@
       "max_hours": 5
     },
     {
-      "name": "S. Amirkhanyan",
+      "name": "Dr. Davis",
       "availability": [
         "Monday 09:00-10:30",
         "Monday 10:45-12:15",
@@ -323,7 +323,7 @@
       "max_hours": 5
     },
     {
-      "name": "M. Smbatyan",
+      "name": "Dr. Rodriguez",
       "availability": [
         "Monday 09:00-10:30",
         "Thursday 09:00-10:30",
@@ -334,7 +334,7 @@
       "max_hours": 7
     },
     {
-      "name": "PE Instructor",
+      "name": "Dr. Martinez",
       "availability": [
         "Thursday 09:00-10:30",
         "Thursday 10:45-12:15",
