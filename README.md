@@ -53,7 +53,7 @@ Create a JSON file with this structure
   ]
 }
 ```
-\* Note that you can have any time slots but the start time shouldn't be earlier than `09:00`
+\* Note that you can have any time slots of format `"Day HH:MM-HH:MM"` but the start time shouldn't be earlier than `09:00`
 
 ## Project Structure
 ```
