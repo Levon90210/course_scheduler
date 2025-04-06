@@ -2,7 +2,7 @@
 
 An optimized course scheduling system using linear programming to assign instructors to time slots while respecting constraints.
 
-[![PuLP](https://img.shields.io/badge/PuLP-Linear_Programming-orange)](https://coin-or.github.io/pulp/)
+[![PuLP](https://img.shields.io/badge/PuLP-Linear_Programming-blue)](https://coin-or.github.io/pulp/)
 ## Features
 + **Constraint-based scheduling** with PuLP
 + **Input and output via JSON**

@@ -1,7 +1,7 @@
 {
   "courses": [
     {
-      "name": "C++ Lecture",
+      "name": "Python Lecture",
       "times_per_week": 1,
       "preferred_time_slots": [
         "Monday 09:00-10:30",
@@ -23,7 +23,7 @@
       ]
     },
     {
-      "name": "C++",
+      "name": "Python",
       "times_per_week": 1,
       "preferred_time_slots": [
         "Monday 09:00-10:30",
@@ -250,7 +250,7 @@
         "Friday 10:45-12:15",
         "Friday 13:00-14:30"
       ],
-      "preferred_courses": ["C++ Lecture"],
+      "preferred_courses": ["Python Lecture"],
       "max_hours": 5
     },
     {
@@ -264,7 +264,7 @@
         "Wednesday 10:45-12:15",
         "Wednesday 13:00-14:30"
       ],
-      "preferred_courses": ["C++"],
+      "preferred_courses": ["Python"],
       "max_hours": 5
     },
     {

@@ -71,7 +71,7 @@ class Scheduler:
         # Objective function
         prob += lpSum(x[(c.name, t, i.name)] * (
             (0 if t in c.preferred_time_slots else 1) # Time slot preference penalty
-            + get_time_penalty(t) # Late day penalty
+            + get_time_penalty(t)                     # Late day penalty
         )
                       for c in self.courses
                       for t in self.time_slots
