@@ -1,0 +1,52 @@
+{% extends "layout.html" %}
+
+{% block title %} - View Schedule{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="text-center">Schedule</h2>
+            </div>
+            <div class="card-body">
+                {% if schedule %}
+                <div class="table-responsive">
+                    <table class="table table-bordered table-hover">
+                        <thead class="table-light">
+                            <tr>
+                                <th>Time</th>
+                                {% for day in days %}
+                                <th>{{ day }}</th>
+                                {% endfor %}
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for row in schedule %}
+                            <tr>
+                                <td><strong>{{ row.time }}</strong></td>
+                                <td>{{ row.monday }}</td>
+                                <td>{{ row.tuesday }}</td>
+                                <td>{{ row.wednesday }}</td>
+                                <td>{{ row.thursday }}</td>
+                                <td>{{ row.friday }}</td>
+                                <td>{{ row.saturday }}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+                {% else %}
+                <div class="alert alert-info">
+                    No schedule has been generated yet. Please generate a schedule first.
+                </div>
+                {% endif %}
+                
+                <div class="text-center mt-4">
+                    <a href="{{ url_for('index') }}" class="btn btn-secondary">Back to Home</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

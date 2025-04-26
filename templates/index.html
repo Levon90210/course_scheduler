@@ -1,0 +1,76 @@
+{% extends "layout.html" %}
+
+{% block title %} - Home{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-10 offset-1">
+        <div class="card">
+            <div class="card-header">
+                <h2 class="text-center">Home</h2>
+            </div>
+            <div class="card-body">
+                <p class="lead text-center">
+                    Welcome to the Course Scheduler application. This tool helps you generate optimal course schedules
+                    based on course requirements, instructor availability, and time slot preferences.
+                </p>
+
+                <div class="card mb-4">
+                    <div class="card-header">
+                        <h5 class="card-title">Load Input File</h5>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Select a JSON file containing course, instructor, and time slot data.</p>
+                        <form action="{{ url_for('load') }}" method="post" enctype="multipart/form-data">
+                            <div class="mb-3">
+                                <input class="form-control" type="file" id="input_file" name="input_file" accept=".json">
+                            </div>
+                            <button type="submit" class="btn btn-primary">Load Data</button>
+                        </form>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Generate Schedule</h5>
+                                <p class="card-text">Create an optimal schedule based on the loaded data.</p>
+                                <form action="{{ url_for('generate') }}" method="post">
+                                    <button type="submit" class="btn btn-primary">Generate</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">View Schedule</h5>
+                                <p class="card-text">View the currently generated schedule.</p>
+                                <a href="{{ url_for('view') }}" class="btn btn-info">View</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-4">
+                        <div class="card h-100">
+                            <div class="card-body text-center">
+                                <h5 class="card-title">Save Schedule</h5>
+                                <p class="card-text">Save the current schedule to a JSON file.</p>
+                                <form action="{{ url_for('save') }}" method="post">
+                                    <div class="mb-3">
+                                        <label for="output_filename" class="form-label">Enter filename:</label>
+                                        <input class="form-control" type="text" id="output_filename" name="output_filename" placeholder="schedule.json">
+                                    </div>
+                                    <button type="submit" class="btn btn-success">Save</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}

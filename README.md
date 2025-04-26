@@ -6,8 +6,9 @@ An optimized course scheduling system using linear programming to assign instruc
 ## Features
 + **Constraint-based scheduling** with PuLP
 + **Input and output via JSON**
-+ **Terminal UI**
-+ **Printing as a table** with Tabulate
+  + File dialog for selecting input files
+
++ **Web UI** with Flask
 + **Smart scheduling** with
   + Instructor availability constraints
   + Course and time preferences
@@ -24,9 +25,17 @@ pip install -r requirements.txt
 ```
 
 ## Usage
+
 ```bash
-python main.py --input data/complex_input.json
+python app.py
 ```
+Then open your browser and navigate to http://localhost:5000
+
+The web interface allows you to:
+1. Load a custom input JSON file
+2. Generate a schedule
+3. View the schedule
+4. Save the schedule
 
 ## Input Format
 Create a JSON file with this structure
@@ -63,6 +72,10 @@ course_scheduler/
 │   ├── models/          # Data classes (Course, Instructor)
 │   ├── utils/           # Helper functions
 │   └── scheduler.py     # Core scheduling logic
-├── main.py              # Entry point
+├── templates/           # HTML templates for the web UI
+│   ├── layout.html      # Base template
+│   ├── index.html       # Home page
+│   └── view.html        # Schedule view page
+├── app.py               # Flask application entry point
 └── requirements.txt     # Dependencies
 ```
