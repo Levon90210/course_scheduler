@@ -1,8 +1,8 @@
 from pulp import *
 from typing import List, Dict, Tuple, TypedDict
 from src.models import *
-from src.utils.schedule_utils import *
 from src.utils.timeslot_utils import *
+import json
 
 class ScheduleEntry(TypedDict):
     """Type definition for scheduled items"""
@@ -100,12 +100,9 @@ class Scheduler:
             })
         return data
 
-    def save_schedule(self, filename: str = "data/output.json") -> None:
+    def save_schedule(self, filename: str) -> None:
         """Save the schedule to JSON"""
         schedule_data = self.get_output_data()
-        save_schedule(schedule_data, filename)
-
-    def print_schedule(self) -> None:
-        """Print the schedule as a table"""
-        schedule_data = self.get_output_data()
-        print_schedule_table(schedule_data)
+        with open(filename, 'w') as f:
+            output = {"schedule": schedule_data}
+            json.dump(output, f, indent=2)
